@@ -1,0 +1,38 @@
+﻿<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+<input type="text" id="un"/>
+<br/>
+<input type="checkbox" id="chkMail "  value="0" />Subscribe for mail
+<br/>
+<input type="button" value="Access" onclick="AccessData()"/>
+<script type="text/javascript">
+  function AccessData() {
+  unNode = document.getElementById("un");
+  chk = document.getElementById("chkMail");
+if(chk.checked) {
+alert("You have subscribed for news letter");
+}
+else {
+alert("You denied the news letter");
+}
+  var username = unNode.value;
+if(username.length < 8) {
+alert("user name must be more than 8 chars");
+unNode.style.backgroundColor =red";
+}
+</script>
+
+
+
+</body>
+
+
+
+</html>

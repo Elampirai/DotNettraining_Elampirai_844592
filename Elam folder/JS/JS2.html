@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+<title> My DOM Test-1 </title>
+</head>
+<body id="bd1" class="MainBody" >
+   <div id="myPara" onmouseout="SetToNormal();" onmouseover="HighLight();">
+ 
+Some Text Here....
+</div>
+<input type = "button" value = "Change Div Content"  onclick="ModifyDivContent()"/>
+  <script type="text/javascript">
+function SetToNormal() {
+  var divNode = document.getElementById("myPara");
+  divNode.style.backgroundColor = "white";
+}
+
+function HighLight() {
+  var divNode = document.getElementById("myPara");
+  divNode.style.backgroundColor = "blue";
+}
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
